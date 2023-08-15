@@ -38,10 +38,14 @@ Variables that are removed from the input data because they are neither targets 
 
 **Compiling, Training, and Evaluating the Model**
 
+268/268 - 0s - loss: 0.6359 - accuracy: 0.7259 - 247ms/epoch - 920us/step
+Loss: 0.635867714881897, Accuracy: 0.7259300093650818
+
 Relu
 - number_input_features = X_train_scaled.shape[1]
 - hidden_nodes_layer1 =  112
 - hidden_nodes_layer2 = 64
+- epochs=100
 
 --------------------------------------------------------------------------
 268/268 - 0s - loss: 0.6359 - accuracy: 0.7279 - 247ms/epoch - 920us/step
@@ -51,7 +55,8 @@ Relu
 - number_input_features = X_train_scaled.shape[1]
 - hidden_nodes_layer1 = 32 
 - hidden_nodes_layer2 = 8
-
+- epochs=100
+  
 --------------------------------------------------------------------------
 268/268 - 0s - loss: 0.5573 - accuracy: 0.7286 - 316ms/epoch - 1ms/step
 Loss: 0.5573371052742004, Accuracy: 0.7286297082901001
@@ -60,7 +65,8 @@ LeakyRelu
 - number_input_features = X_train_scaled.shape[1]
 - hidden_nodes_layer1 = 32 
 - hidden_nodes_layer2 = 8
-
+- epochs=100
+  
 -------------------------------------------------------------------------
 268/268 - 0s - loss: 0.5537 - accuracy: 0.7255 - 186ms/epoch - 694us/step
 Loss: 0.553698718547821, Accuracy: 0.7254810333251953
@@ -70,7 +76,8 @@ ELU
 - number_input_features = X_train_scaled.shape[1]
 - hidden_nodes_layer1 = 32 
 - hidden_nodes_layer2 = 8
-
+- epochs=100
+  
 -------------------------------------------------------------------------
 268/268 - 0s - loss: 0.5543 - accuracy: 0.7290 - 334ms/epoch - 1ms/step
 Loss: 0.5543002486228943, Accuracy: 0.7289795875549316
@@ -80,9 +87,10 @@ swish
 - number_input_features = X_train_scaled.shape[1]
 - hidden_nodes_layer1 = 32 
 - hidden_nodes_layer2 = 8
-
+- epochs=100
+  
 --------------------------------------------------------------------------
-268/268 - 0s - loss: 0.5535 - accuracy: 0.7313 - 393ms/epoch - 1ms/step
+268/268 - 0s - loss: 0.5535 - accuracy: 0.7213 - 393ms/epoch - 1ms/step
 Loss: 0.553458034992218, Accuracy: 0.7213119769096375
 
 LeakyRelu
@@ -90,7 +98,8 @@ LeakyRelu
 - hidden_nodes_layer1 = 32 
 - hidden_nodes_layer2 = 8
 - hidden_nodes_layer3 = 16
-
+- epochs=100
+  
 --------------------------------------------------------------------------
 
 **Conclusion**
