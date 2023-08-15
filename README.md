@@ -78,7 +78,7 @@ hidden_nodes_layer2 = 8
 
 --------------------------------------------------------------------------
 268/268 - 0s - loss: 0.5535 - accuracy: 0.7313 - 393ms/epoch - 1ms/step
-Loss: 0.553458034992218, Accuracy: 0.7313119769096375
+Loss: 0.553458034992218, Accuracy: 0.7213119769096375
 
 LeakyRelu
 number_input_features = X_train_scaled.shape[1]
@@ -86,6 +86,19 @@ hidden_nodes_layer1 = 32
 hidden_nodes_layer2 = 8
 hidden_nodes_layer3 = 16
 
-
-
 --------------------------------------------------------------------------
+
+**Conclusion**
+
+I was able to achieve the best performance with folowing combination:
+
+Relu
+number_input_features = X_train_scaled.shape[1]
+hidden_nodes_layer1 = 41 
+hidden_nodes_layer2 = 21
+hidden_nodes_layer3 = 11
+epochs=150
+268/268 - 0s - loss: 0.5621 - accuracy: 0.7301 - 345ms/epoch - 1ms/step
+Loss: 0.5620532631874084, Accuracy: 0.7301457524299622
+
+Increasing number of layer or nurons made no difference. Increasing epochs made a slight difference but added significant delay as well. I have tried different activations as well but it hasn't made significant differnce on achieving greater accuracy or reducing loss.
